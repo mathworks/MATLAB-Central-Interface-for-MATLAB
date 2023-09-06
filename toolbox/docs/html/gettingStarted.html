@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB 2023b"><title>Getting Started with the MATLAB Central Interface for MATLAB</title><style type="text/css">.rtcContent { padding: 30px; } .S0 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 28.8px; min-height: 0px; white-space: pre-wrap; color: rgb(192, 76, 11); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 24px; font-weight: 400; text-align: left;  }
+.S1 { margin: 20px 10px 5px 4px; padding: 0px; line-height: 20px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 20px; font-weight: 700; text-align: left;  }
+.S2 { margin: 2px 10px 9px 4px; padding: 0px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: 400; text-align: left;  }
+.S3 { margin: 10px 0px 20px; padding-left: 0px; font-family: Helvetica, Arial, sans-serif; font-size: 14px;  }
+.S4 { margin-left: 56px; line-height: 21px; min-height: 0px; text-align: left; white-space: pre-wrap;  }
+.CodeBlock { background-color: #F5F5F5; margin: 10px 0 10px 0; }
+.S5 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 0px none rgb(33, 33, 33); border-radius: 4px 4px 0px 0px; padding: 6px 45px 0px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S6 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 0px none rgb(33, 33, 33); border-bottom: 0px none rgb(33, 33, 33); border-radius: 0px; padding: 0px 45px 0px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S7 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 0px none rgb(33, 33, 33); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 0px 0px 4px 4px; padding: 0px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S8 { margin: 10px 10px 9px 4px; padding: 0px; line-height: 21px; min-height: 0px; white-space: pre-wrap; color: rgb(33, 33, 33); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 14px; font-weight: 400; text-align: left;  }
+.S9 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 0px none rgb(33, 33, 33); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 0px; padding: 0px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S10 { color: rgb(33, 33, 33); padding: 10px 0px 6px 17px; background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box; font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px; overflow-x: hidden; line-height: 17.234px;  }
+.embeddedOutputsVariableTableElement .ClientViewDiv  table tr {  height: 22px;  white-space: nowrap;}
+.embeddedOutputsVariableTableElement .ClientViewDiv  table tr td,.embeddedOutputsVariableTableElement .ClientViewDiv  table tr th {  background-color:white;  text-overflow: ellipsis;  font-family: 'Arial', sans-serif;  font-size: 12px;  overflow : hidden;}
+.embeddedOutputsVariableTableElement .ClientViewDiv  table tr span {  text-overflow: ellipsis;  padding: 3px;}
+.embeddedOutputsVariableTableElement .ClientViewDiv  table tr th {    color: rgba(0,0,0,0.5);  padding: 3px;  font-size: 9px;}
+/* ClientDocument has a summary bar child that takes up 17px, this clashes with overflow on the view which allots space for scrollbars. On print preview, this causes headers from <thead> to overlap on subsequent pages. Displaying Document as flex renders summarybar and view in column format and fixes the issue g2788485 */.embeddedOutputsVariableTableElement .ClientDocument {  display: flex;  flex-direction: column;}
+.S11 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 4px 4px 0px 0px; padding: 6px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+/* Styling that is common to warnings and errors is in diagnosticOutput.css */.embeddedOutputsErrorElement {    min-height: 18px;    max-height: 550px;}
+.embeddedOutputsErrorElement .diagnosticMessage-errorType {    overflow: auto;}
+.embeddedOutputsErrorElement.inlineElement {}
+.embeddedOutputsErrorElement.rightPaneElement {}
+/* Styling that is common to warnings and errors is in diagnosticOutput.css */.embeddedOutputsWarningElement {    min-height: 18px;    max-height: 550px;}
+.embeddedOutputsWarningElement .diagnosticMessage-warningType {    overflow: auto;}
+.embeddedOutputsWarningElement.inlineElement {}
+.embeddedOutputsWarningElement.rightPaneElement {}
+/* Copyright 2015-2023 The MathWorks, Inc. *//* In this file, styles are not scoped to rtcContainer since they could be in the Dojo Tooltip */.diagnosticMessage-wrapper {    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;    font-size: 12px;}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType {    /*This fallback value will be used for appdesigner warnings*/    color: var(--rtc-warning-output-color, var(--mw-color-matlabWarning));}
+.diagnosticMessage-wrapper.diagnosticMessage-warningType a {    /*This fallback value will be used for appdesigner warnings*/    color: var(--rtc-warning-output-color, var(--mw-color-matlabWarning));    text-decoration: underline;}
+.rtcThemeDefaultOverride .diagnosticMessage-wrapper.diagnosticMessage-warningType,.rtcThemeDefaultOverride .diagnosticMessage-wrapper.diagnosticMessage-warningType a {    color: var(--mw-color-matlabWarning) !important;}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType {    /*This fallback value will be used in appdesigner error tooltip text*/    color: var(--rtc-error-output-color, var(--mw-color-matlabErrors));}
+.diagnosticMessage-wrapper.diagnosticMessage-errorType a {    /*This fallback value will be used in appdesigner error tooltip text*/    color: var(--rtc-error-output-color, var(--mw-color-matlabErrors));    text-decoration: underline;}
+.rtcThemeDefaultOverride .diagnosticMessage-wrapper.diagnosticMessage-errorType,.rtcThemeDefaultOverride .diagnosticMessage-wrapper.diagnosticMessage-errorType a {    color: var(--mw-color-matlabErrors) !important;}
+.diagnosticMessage-wrapper .diagnosticMessage-messagePart,.diagnosticMessage-wrapper .diagnosticMessage-causePart {    white-space: pre-wrap;}
+.diagnosticMessage-wrapper .diagnosticMessage-stackPart {    white-space: pre;}
+.embeddedOutputsTextElement,.embeddedOutputsVariableStringElement {    white-space: pre;    word-wrap:  initial;    min-height: 18px;    max-height: 550px;}
+.embeddedOutputsTextElement .textElement,.embeddedOutputsVariableStringElement .textElement {    overflow: auto;}
+.textElement,.rtcDataTipElement .textElement {    padding-top: 2px;}
+.embeddedOutputsTextElement.inlineElement,.embeddedOutputsVariableStringElement.inlineElement {}
+.inlineElement .textElement {}
+.embeddedOutputsTextElement.rightPaneElement,.embeddedOutputsVariableStringElement.rightPaneElement {    min-height: 16px;}
+.rightPaneElement .textElement {    padding-top: 2px;    padding-left: 9px;}
+.S12 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 1px solid rgb(217, 217, 217); border-radius: 0px; padding: 6px 45px 4px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }
+.S13 { border-left: 1px solid rgb(217, 217, 217); border-right: 1px solid rgb(217, 217, 217); border-top: 1px solid rgb(217, 217, 217); border-bottom: 0px none rgb(33, 33, 33); border-radius: 0px; padding: 6px 45px 0px 13px; line-height: 18.004px; min-height: 0px; white-space: nowrap; color: rgb(33, 33, 33); font-family: Menlo, Monaco, Consolas, "Courier New", monospace; font-size: 14px;  }</style></head><body><div class = rtcContent><h1  class = 'S0'><span>Getting Started with the MATLAB Central Interface for MATLAB</span></h1><h2  class = 'S1'><span>Description</span></h2><div  class = 'S2'><span>The Community API allows developers to programmatically retrieve data from</span><span> </span><a href = "https://www.mathworks.com/matlabcentral"><span>MATLAB Central.</span></a><span> </span><span>The API offers a single resource to search across different MATLAB Central areas including MATLAB Answers, File Exchange, Blogs, Cody, Highlights and Contests. Use this toolbox for easy integration with the Community API from your MATLAB scripts and apps.</span></div><h2  class = 'S1'><span>System Requirements</span></h2><div  class = 'S2'><span>Requires MATLAB® release R2017b or newer</span></div><h2  class = 'S1'><span>Functions</span></h2><ul  class = 'S3'><li  class = 'S4'><span style=' font-family: monospace;'>SearchApi.search </span><span>- Search MATLAB Central areas for content matching specified query. Areas you can search include MATLAB Answers, File Exchange, Blogs, Cody, Community Highlights, and Community Contests. The </span><span style=' font-style: italic;'>scope</span><span> parameter lets you restrict the request to specific MATLAB Central areas. The request accepts several other parameters to help narrow your search and create complex queries.</span></li></ul><h2  class = 'S1'><span>Usage</span></h2><div  class = 'S2'><span>Download matlabcentral-matlab.mltbx</span><span> </span><span>into your workspace.</span></div><h2  class = 'S1'><span>Examples</span></h2><div  class = 'S2'><span>The following example demonstrates calling the Search API to retrieve MATLAB Answers for content matching the query term 'plotting' in the last one year. The example also demonstrates the use of all optional query parameters supported by the API.</span></div><div  class = 'S2'><span>Call the Search API using the </span><span style=' font-style: italic;'>search</span><span> method passing in values for all optional parameters</span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S5'><span style="white-space: pre"><span >query = </span><span style="color: #a709f5;">"plotting"</span><span >;</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"><span >scope = </span><span style="color: #a709f5;">"file-exchange,matlab-answers"</span><span >;</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"><span >created_before = datetime(</span><span style="color: #a709f5;">'12-Mar-2023 11:00:00'</span><span >);</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"><span >created_after = datetime(</span><span style="color: #a709f5;">'06-Mar-2022 11:00:00'</span><span >);</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"><span >sort_order = </span><span style="color: #a709f5;">"created asc"</span><span >;</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"><span >page = 2;</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"><span >count = 15;</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'>&nbsp;</div></div><div class="inlineWrapper"><div  class = 'S7'><span style="white-space: pre"><span >[searchResults, statusCode, headers] = SearchApi.search(query=query,scope=scope,created_before=created_before,created_after=created_after,sort_order=sort_order,page=page,count=count);</span></span></div></div></div><div  class = 'S8'><span>Extract the </span><span style=' font-style: italic;'>items</span><span> and </span><span style=' font-style: italic;'>total_found</span><span> objects from the response </span></div><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S5'><span style="white-space: pre"><span >totalFound = searchResults.total_found;</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S9'><span style="white-space: pre"><span >items = searchResults.items</span></span></div><div  class = 'S10'><div class="inlineElement eoOutputWrapper embeddedOutputsVariableTableElement" uid="F4D40F7F" prevent-scroll="true" data-testid="output_0" style="width: calc(100% - 5px);"><div class="ClientDocument veSpecifier dijitContentPane document ArrayTable object Array" id="variableeditor_peer_RemoteDocument_1" widgetid="variableeditor_peer_RemoteDocument_1" tabindex="0" aria-labelledby="variableeditor_views_SummaryBar_3"><div class="overlayPrepopulatedData"></div><div class="summaryBar" style="font-size: 12px; font-family: Consolas, Inconsolata, Menlo, monospace;"><span>items = </span><span style="color: rgb(179, 179, 179); font-style: normal;">1×15 Artifact </span></div><div id="variableeditor_peer_RemoteArrayViewModel_0" widgetid="variableeditor_peer_RemoteArrayViewModel_0" class="ClientViewDiv hasSummaryBar" data-viewid="__1" style="width: 100%; overflow: auto;"><table cellspacing="0" style="border-spacing: 0px; border-collapse: collapse;"><thead><tr><th rowspan="1" style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 34px; border: 1px solid rgb(191, 191, 191); text-align: left; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>&nbsp;</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 84px; min-width: 84px; max-width: 84px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>1</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 84px; min-width: 84px; max-width: 84px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>2</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 82px; min-width: 82px; max-width: 82px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>3</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 84px; min-width: 84px; max-width: 84px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>4</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 84px; min-width: 84px; max-width: 84px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>5</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 84px; min-width: 84px; max-width: 84px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>6</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 84px; min-width: 84px; max-width: 84px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>7</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 84px; min-width: 84px; max-width: 84px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>8</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 84px; min-width: 84px; max-width: 84px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>9</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 84px; min-width: 84px; max-width: 84px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>10</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 84px; min-width: 84px; max-width: 84px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>11</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 84px; min-width: 84px; max-width: 84px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>12</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 84px; min-width: 84px; max-width: 84px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>13</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 84px; min-width: 84px; max-width: 84px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>14</span></th><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 84px; min-width: 84px; max-width: 84px; border: 1px solid rgb(191, 191, 191); text-align: center; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>15</span></th></tr></thead><tbody><tr><th style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 6px 3px 3px; width: 34px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left; background-color: rgb(245, 245, 245); color: rgba(0, 0, 0, 0.75); font-weight: 700; box-sizing: border-box;"><span>1</span></th><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 84px; min-width: 84px; max-width: 84px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;Question</span></td><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 84px; min-width: 84px; max-width: 84px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;Question</span></td><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 82px; min-width: 82px; max-width: 82px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;File</span></td><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 84px; min-width: 84px; max-width: 84px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;Question</span></td><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 84px; min-width: 84px; max-width: 84px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;Question</span></td><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 84px; min-width: 84px; max-width: 84px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;Question</span></td><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 84px; min-width: 84px; max-width: 84px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;Question</span></td><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 84px; min-width: 84px; max-width: 84px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;Question</span></td><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 84px; min-width: 84px; max-width: 84px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;Question</span></td><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 84px; min-width: 84px; max-width: 84px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;Question</span></td><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 84px; min-width: 84px; max-width: 84px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;Question</span></td><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 84px; min-width: 84px; max-width: 84px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;Question</span></td><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 84px; min-width: 84px; max-width: 84px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;Question</span></td><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 84px; min-width: 84px; max-width: 84px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;Question</span></td><td style="text-overflow: ellipsis; font-family: Arial, sans-serif; font-size: 12px; overflow: hidden; padding: 3px; width: 84px; min-width: 84px; max-width: 84px; border-width: 0px 1px 1px; border-style: solid; border-color: rgb(191, 191, 191); border-image: initial; text-align: left;"><span>1×1&nbsp;Question</span></td></tr></tbody></table></div></div><div class="outputLayer selectedOutputDecorationLayer doNotExport"></div><div class="outputLayer activeOutputDecorationLayer doNotExport"></div><div class="outputLayer scrollableOutputDecorationLayer doNotExport"></div></div></div></div></div><div  class = 'S8'><span>Display the results as a table</span></div><div class="CodeBlock"><div class="inlineWrapper outputs"><div  class = 'S11'><span style="white-space: pre"><span >disp(</span><span style="color: #a709f5;">"Response Status: " </span><span >+ statusCode);</span></span></div><div  class = 'S10'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="562844B5" prevent-scroll="true" data-testid="output_1" style="width: 1146px; white-space: pre; font-style: normal; color: rgb(33, 33, 33); font-size: 12px;"><div class="textElement eoOutputContent" data-previous-available-width="1109" data-previous-scroll-height="17" data-hashorizontaloverflow="false" style="max-height: 261px; white-space: pre; font-style: normal; color: rgb(33, 33, 33); font-size: 12px;">Response Status: 200</div></div></div></div><div class="inlineWrapper outputs"><div  class = 'S12'><span style="white-space: pre"><span >disp(</span><span style="color: #a709f5;">"Found " </span><span >+ totalFound + </span><span style="color: #a709f5;">" total results"</span><span >)</span></span></div><div  class = 'S10'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement" uid="F2454A21" prevent-scroll="true" data-testid="output_2" style="width: 1146px; white-space: pre; font-style: normal; color: rgb(33, 33, 33); font-size: 12px;"><div class="textElement eoOutputContent" data-previous-available-width="1109" data-previous-scroll-height="17" data-hashorizontaloverflow="false" style="max-height: 261px; white-space: pre; font-style: normal; color: rgb(33, 33, 33); font-size: 12px;">Found 12661 total results</div></div></div></div><div class="inlineWrapper"><div  class = 'S13'><span style="white-space: pre"><span style="color: #0e00ff;">if </span><span >totalFound &gt; 0</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"><span >    </span><span style="color: #0e00ff;">for </span><span >item = 1:length(items)</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"><span >        disp(items(item))</span></span></div></div><div class="inlineWrapper"><div  class = 'S6'><span style="white-space: pre"><span >    </span><span style="color: #0e00ff;">end</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S9'><span style="white-space: pre"><span style="color: #0e00ff;">end</span></span></div><div  class = 'S10'><div class="inlineElement eoOutputWrapper embeddedOutputsTextElement scrollableOutput" uid="6CCF836D" prevent-scroll="true" data-testid="output_3" style="width: 1146px; white-space: pre; font-style: normal; color: rgb(33, 33, 33); font-size: 12px;"><div class="textElement eoOutputContent scrollArea" data-previous-available-width="1109" data-previous-scroll-height="4181" data-hashorizontaloverflow="true" style="max-height: 261px; white-space: pre; font-style: normal; color: rgb(33, 33, 33); font-size: 12px;">  Question with properties:
+
+     AnswerCount: 2
+    CommentCount: 3
+      IsAccepted: 0
+      IsAnswered: 1
+       ViewCount: 1
+       VoteCount: 0
+            Type: "question"
+          Author: [1×1 Author]
+     CreatedDate: 07-Mar-2022 01:28:11
+     Description: "How to generate next random number which is +-30% of previous random number Hello, the following code generate random number depend on levels i want to generate next random number which is +-30% of previous random number for example i have random number 66 the next random number should be +-30% of 66 how can i do it in matlab levels=round(rand*10)+2; RandomNumber= round(rand(1,levels)*998)+2;"
+              Id: 1665284
+           Scope: "matlab-answers"
+            Tags: [8×1 string]
+           Title: "How to generate next random number which is +-30% of previous random number"
+     UpdatedDate: 07-Mar-2022 01:28:11
+             Url: [1×1 matlab.net.URI]
+
+  Question with properties:
+
+     AnswerCount: 1
+    CommentCount: 0
+      IsAccepted: 0
+      IsAnswered: 1
+       ViewCount: 0
+       VoteCount: 0
+            Type: "question"
+          Author: [1×1 Author]
+     CreatedDate: 07-Mar-2022 03:53:04
+     Description: "Specific interval of imported data Hi, I want to sort out a specific interval in my imported data. More specifically i want to use the data between row 24 - 48 and here&amp;#39;s how far i&amp;#39;ve come: import1=zeros(24,1); for j=1:36 for i=[24:48] import1(i,j)=allahus_2017till2021(i,j); end end Now when i want to plot this, i get the numbers before 24 (0-24) as well as zeroes, see picture. How do i write so that it starts from 24 and end at 48? Best regards "
+              Id: 1665359
+           Scope: "matlab-answers"
+            Tags: [4×1 string]
+           Title: "Specific interval of imported data"
+     UpdatedDate: 07-Mar-2022 03:53:04
+             Url: [1×1 matlab.net.URI]
+
+  File with properties:
+
+     CommentCount: 0
+    DownloadCount: 55
+           Rating: 0
+      RatingCount: 0
+          Version: "1.0.4"
+             Type: "file"
+           Author: [1×1 Author]
+      CreatedDate: 07-Mar-2022 03:58:47
+      Description: "fft_windowAuthor: Ruei-Jyun HungThis repository includes the code for the fft_window.m  and fft_hanningwindow.m Matlab functions. The functions are intended to add a moving window while using fft.UsageSyntax[psd, f] = fft_window(data, t_start, t_end, channels, fs, window, shift);Argumentsdata                      % Input datat_start                   % starting time (sec) e.g. 0t_end                     % ending time (sec) e.g. 26channels                  % Number of signals e.g. 31fs                        % Sampling frequency (Hz) e.g. 500window                    % Length of window (sec) e.g. 4shift                     % Overlapping e.g. 0.5Example%% 1. generate signals% 10Hzfreq1 = 10;t1 = linspace(0,12,12001);y1 = sin(2*pi*freq1*t1)*100;figure,subplot(4,1,1),plot(t1, y1);ylim([-120 120]);xlabel(&amp;#39;sec&amp;#39;);ylabel(&amp;#39;uV&amp;#39;);title(&amp;#39;10Hz&amp;#39;);% 20Hzfreq2 = 20;y2 = sin(2*pi*freq2*t1)*20;subplot(4,1,2),plot(t1, y2);ylim([-120 120]);xlabel(&amp;#39;sec&amp;#39;);ylabel(&amp;#39;uV&amp;#39;);title(&amp;#39;20Hz&amp;#39;);% 50Hzfreq3 = 50;y3 = sin(2*pi*freq3*t1)*50;subplot(4,1,3),plot(t1, y3);ylim([-120 120]);xlabel(&amp;#39;sec&amp;#39;);ylabel(&amp;#39;uV&amp;#39;);title(&amp;#39;50Hz&amp;#39;);%  concatenate signalst2 = linspace(0,36,36001);y4 = zeros(1, 36001);y4(:, 1:12000) = y1(:, 1:12000);y4(:, 12001:24000) = y2(:, 1:12000);y4(:, 24001:36001) = y3(:, 1:12001);subplot(4,1,4),plot(t2, y4);ylim([-120 120]);xlabel(&amp;#39;sec&amp;#39;);ylabel(&amp;#39;uV&amp;#39;);title(&amp;#39;Concat&amp;#39;);%% 2. fft_windown_channel = 1;Fs = 1000;window = 4;shift = 0.5;% epoch1[psd, f] = fft_window(y4, 0, 12, n_channel, Fs, window, shift); % fft analysisfigure, subplot(3, 1, 1), plot(f,psd);ylim([0 120]);xlabel(&amp;#39;frequency&amp;#39;);ylabel(&amp;#39;power&amp;#39;);title(&amp;#39;epoch 1&amp;#39;);% epoch2[psd, f] = fft_window(y4, 12, 24, n_channel, Fs, window, shift); % fft analysissubplot(3, 1, 2), plot(f,psd);ylim([0 120]);xlabel(&amp;#39;frequency&amp;#39;);ylabel(&amp;#39;power&amp;#39;);title(&amp;#39;epoch 2&amp;#39;);% epoch3[psd, f] = fft_window(y4, 24, 36, n_channel, Fs, window, shift); % fft analysissubplot(3, 1, 3), plot(f,psd);ylim([0 120]);xlabel(&amp;#39;frequency&amp;#39;);ylabel(&amp;#39;power&amp;#39;);title(&amp;#39;epoch 3&amp;#39;);%% 3. fft_hanningwindown_channel = 1;Fs = 1000;window = 4;shift = 0.5;% epoch1[psd, f] = fft_hanningwindow(y4, 0, 12, n_channel, Fs, window, shift); % fft analysisfigure, subplot(3, 1, 1), plot(f,psd);ylim([0 120]);xlabel(&amp;#39;frequency&amp;#39;);ylabel(&amp;#39;power&amp;#39;);title(&amp;#39;epoch 1&amp;#39;);% epoch2[psd, f] = fft_hanningwindow(y4, 12, 24, n_channel, Fs, window, shift); % fft analysissubplot(3, 1, 2), plot(f,psd);ylim([0 120]);xlabel(&amp;#39;frequency&amp;#39;);ylabel(&amp;#39;power&amp;#39;);title(&amp;#39;epoch 2&amp;#39;);% epoch3[psd, f] = fft_hanningwindow(y4, 24, 36, n_channel, Fs, window, shift); % fft analysissubplot(3, 1, 3), plot(f,psd);ylim([0 120]);xlabel(&amp;#39;frequency&amp;#39;);ylabel(&amp;#39;power&amp;#39;);title(&amp;#39;epoch 3&amp;#39;);"
+               Id: 107589
+            Scope: "file-exchange"
+             Tags: [3×1 string]
+            Title: "fft_window"
+      UpdatedDate: 07-Mar-2022 03:58:47
+              Url: [1×1 matlab.net.URI]
+
+  Question with properties:
+
+     AnswerCount: 1
+    CommentCount: 0
+      IsAccepted: 0
+      IsAnswered: 1
+       ViewCount: 0
+       VoteCount: 0
+            Type: "question"
+          Author: [1×1 Author]
+     CreatedDate: 07-Mar-2022 04:15:50
+     Description: "how to plot sequare wave ? I would like to Plot a periodic square wave different apmlitude. example rect=[1 1 8 8 2 2];"
+              Id: 1665374
+           Scope: "matlab-answers"
+            Tags: "wave sequare"
+           Title: "how to plot sequare wave ?"
+     UpdatedDate: 07-Mar-2022 04:15:50
+             Url: [1×1 matlab.net.URI]
+
+  Question with properties:
+
+     AnswerCount: 1
+    CommentCount: 3
+      IsAccepted: 1
+      IsAnswered: 0
+       ViewCount: 0
+       VoteCount: 0
+            Type: "question"
+          Author: [1×1 Author]
+     CreatedDate: 07-Mar-2022 06:06:59
+     Description: "Calculating the mathematical expression I have to calculate the value of an expression (x) for a range of inputs y and z and plot the output separately with respect to y and z. How do I do this? y = [1,1000,50]; z = [1,1000,50]; x = 55*y^(3/2) + 10*z^(4);"
+              Id: 1665474
+           Scope: "matlab-answers"
+            Tags: "matlab"
+           Title: "Calculating the mathematical expression "
+     UpdatedDate: 07-Mar-2022 06:06:59
+             Url: [1×1 matlab.net.URI]
+
+  Question with properties:
+
+     AnswerCount: 1
+    CommentCount: 0
+      IsAccepted: 0
+      IsAnswered: 1
+       ViewCount: 2
+       VoteCount: 1
+            Type: "question"
+          Author: [1×1 Author]
+     CreatedDate: 07-Mar-2022 07:03:05
+     Description: "Layout scope Matlab online doesn&amp;#39;t work Hi, I have a scope with 4 inputs and I would like to show all plots separately, however, the layout option in scope doesn&amp;#39;t work. I&amp;#39;m using Matlab online, I&amp;#39;ve tried Brave, Chrome and Firefox. Any clue how to solve this? Thanks"
+              Id: 1665504
+           Scope: "matlab-answers"
+            Tags: [2×1 string]
+           Title: "Layout scope Matlab online doesn&amp;#39;t work"
+     UpdatedDate: 07-Mar-2022 07:03:05
+             Url: [1×1 matlab.net.URI]
+
+  Question with properties:
+
+     AnswerCount: 1
+    CommentCount: 0
+      IsAccepted: 1
+      IsAnswered: 0
+       ViewCount: 0
+       VoteCount: 0
+            Type: "question"
+          Author: [1×1 Author]
+     CreatedDate: 07-Mar-2022 08:29:48
+     Description: "REgarding plotting of graph in matlab How do we change the lower limit of the y axis on the graph below? I wanted the y axis to start from 15 and not from 0. Can we do that using plot or any other function?"
+              Id: 1665559
+           Scope: "matlab-answers"
+            Tags: "matlab"
+           Title: "REgarding plotting of graph in matlab"
+     UpdatedDate: 07-Mar-2022 08:29:48
+             Url: [1×1 matlab.net.URI]
+
+  Question with properties:
+
+     AnswerCount: 1
+    CommentCount: 2
+      IsAccepted: 1
+      IsAnswered: 0
+       ViewCount: 0
+       VoteCount: 0
+            Type: "question"
+          Author: [1×1 Author]
+     CreatedDate: 07-Mar-2022 08:39:12
+     Description: "Help with graph plotting I am getting the below strange horizontal line starting from 0 to the other end while plotting a curve. Any idea why would this be? I am using plot function plot(a,b);"
+              Id: 1665574
+           Scope: "matlab-answers"
+            Tags: "matlab"
+           Title: "Help with graph plotting"
+     UpdatedDate: 07-Mar-2022 08:39:12
+             Url: [1×1 matlab.net.URI]
+
+  Question with properties:
+
+     AnswerCount: 1
+    CommentCount: 0
+      IsAccepted: 0
+      IsAnswered: 1
+       ViewCount: 1
+       VoteCount: 0
+            Type: "question"
+          Author: [1×1 Author]
+     CreatedDate: 07-Mar-2022 09:09:13
+     Description: "How do I insert errobar to a timeseries line, specifying the time length of the errorbars I have a timeseries of five years of data. I need to make various line graphs with errorbars, with the errorbars in each graph by year, season and month, respectively. However, I coould not discover how to specify on the errorbar function, the period of data in which I want the errorbars. Please, could anyone kindly help me with this? Thanks!"
+              Id: 1665594
+           Scope: "matlab-answers"
+            Tags: [3×1 string]
+           Title: "How do I insert errobar to a timeseries line, specifying the time length of the errorbars"
+     UpdatedDate: 07-Mar-2022 09:09:13
+             Url: [1×1 matlab.net.URI]
+
+  Question with properties:
+
+     AnswerCount: 1
+    CommentCount: 0
+      IsAccepted: 0
+      IsAnswered: 1
+       ViewCount: 0
+       VoteCount: 0
+            Type: "question"
+          Author: [1×1 Author]
+     CreatedDate: 07-Mar-2022 09:20:41
+     Description: "Bar Plot Legend and Axes I have some data which I plotted as, What I want to do would look something similar to, I opened another figure and copied the subplots manually, I don&amp;#39;t know how to code this to automatically work and look cleaner. Moreover, the legend entries don&amp;#39;t seem to match colors. I think it&amp;#39;s not correct. Is it possible that I remove the YTickLabels from the subplots axes and instead write down the values on the bar chart. Any help would be highly appreciated. There&amp;#39;s a lot of difference between values. If I plot them all on one plot, then some data might look too small. My code is given below clear;close all;clc set(0,&amp;#39;DefaultLineLineWidth&amp;#39;,2); successful_steps = [17;48;21;18]; rejected_steps = [3;17;6;4]; func_evaluations = [145;182;165;148]; execution_time = [110;80;66;61]; figure(1); subplot(141);hold on;grid off;box off; x = gca; b1 = bar(successful_steps,&amp;#39;FaceColor&amp;#39;,&amp;#39;Flat&amp;#39;); b1.CData(1,:) = [0 0.8 0.8]; b1.CData(2,:) = [0.4940 0.1840 0.5560]; b1.CData(3,:) = [0.6350 0.0780 0.1840]; b1.CData(4,:) = [0 0.4470 0.7410]; xlabel({&amp;#39;Successful&amp;#39;;&amp;#39;Steps&amp;#39;},&amp;#39;FontSize&amp;#39;,12); x.XTickLabels = {&amp;#39;&amp;#39;}; subplot(142);hold on;grid off;box off; x = gca; b1 = bar(rejected_steps,&amp;#39;FaceColor&amp;#39;,&amp;#39;Flat&amp;#39;); b1.CData(1,:) = [0 0.8 0.8]; b1.CData(2,:) = [0.4940 0.1840 0.5560]; b1.CData(3,:) = [0.6350 0.0780 0.1840]; b1.CData(4,:) = [0 0.4470 0.7410]; xlabel({&amp;#39;Rejected&amp;#39;;&amp;#39;Steps&amp;#39;},&amp;#39;FontSize&amp;#39;,12); x.XTickLabels = {&amp;#39;&amp;#39;}; subplot(143);hold on;grid off;box off; x = gca; b1 = bar(func_evaluations,&amp;#39;FaceColor&amp;#39;,&amp;#39;Flat&amp;#39;); b1.CData(1,:) = [0 0.8 0.8]; b1.CData(2,:) = [0.4940 0.1840 0.5560]; b1.CData(3,:) = [0.6350 0.0780 0.1840]; b1.CData(4,:) = [0 0.4470 0.7410]; xlabel({&amp;#39;Function&amp;#39;;&amp;#39;Evaluations&amp;#39;},&amp;#39;FontSize&amp;#39;,12); x.XTickLabels = {&amp;#39;&amp;#39;}; subplot(144);hold on;grid off;box off; x = gca; b1 = bar(execution_time,&amp;#39;FaceColor&amp;#39;,&amp;#39;Flat&amp;#39;); b1.CData(1,:) = [0 0.8 0.8]; b1.CData(2,:) = [0.4940 0.1840 0.5560]; b1.CData(3,:) = [0.6350 0.0780 0.1840]; b1.CData(4,:) = [0 0.4470 0.7410]; xlabel({&amp;#39;Execution&amp;#39;;&amp;#39;Time&amp;#39;},&amp;#39;FontSize&amp;#39;,12); x.XTickLabels = {&amp;#39;&amp;#39;}; sgtitle(&amp;#39;Performance Comparison of xyz Methods&amp;#39;,&amp;#39;FontSize&amp;#39;,16,&amp;#39;FontWeight&amp;#39;,&amp;#39;Bold&amp;#39;); figure(2);hold on;grid off;box on ax = gca; h1 = plot(0,[0 0.8 0.8]); h2 = plot(0,[0.4940 0.1840 0.5560]); h3 = plot(0,[0.6350 0.0780 0.1840]); h4 = plot(0,[0 0.4470 0.7410]); legend(&amp;#39;M1&amp;#39;,&amp;#39;M2&amp;#39;,&amp;#39;M3&amp;#39;,&amp;#39;M4&amp;#39;,&amp;#39;Orientation&amp;#39;,&amp;#39;Horizontal&amp;#39;,&amp;#39;Box&amp;#39;,&amp;#39;Off&amp;#39;); ax.XTickLabels = {&amp;#39;&amp;#39;}; ax.YTickLabels = {&amp;#39;&amp;#39;}; title(&amp;#39;Performance Comparison of xyz Methods&amp;#39;,&amp;#39;FontSize&amp;#39;,16,&amp;#39;FontWeight&amp;#39;,&amp;#39;Bold&amp;#39;); xlabel({&amp;#39;&amp;#39;;&amp;#39;&amp;#39;},&amp;#39;FontSize&amp;#39;,12); "
+              Id: 1665609
+           Scope: "matlab-answers"
+            Tags: [4×1 string]
+           Title: "Bar Plot Legend and Axes"
+     UpdatedDate: 07-Mar-2022 09:20:41
+             Url: [1×1 matlab.net.URI]
+
+  Question with properties:
+
+     AnswerCount: 0
+    CommentCount: 0
+      IsAccepted: 0
+      IsAnswered: 0
+       ViewCount: 4
+       VoteCount: 0
+            Type: "question"
+          Author: [1×1 Author]
+     CreatedDate: 07-Mar-2022 09:28:39
+     Description: "unexpected &amp;quot;path gains&amp;quot; results from tdl channel when i set the tdl profile to &amp;#39;Custom&amp;#39;, i have to set the AveragePathGains. Uploaded is a a script for tdl channel with custom profile, when plotting the pathgains (using mesh function) , i got unexpected result. As shown in the attached figure the path gain for the first tap is around -16 dB. while in the configuration i set the first tap original path gain in (AveragePathGains) to -32 dB. all the values that have been set in the AveragePathGains suffer from shifting up(or adding positive values to those gains). according to my understanding, the added values to the original path gains comes from the rayleigh distribution, but the question here, why the random value we got from the rayliegh distribution is positive always and very high. Is the random number generated from the rayliegh distribution related to the power of the tap? "
+              Id: 1665624
+           Scope: "matlab-answers"
+            Tags: [7×1 string]
+           Title: "unexpected &amp;quot;path gains&amp;quot; results from tdl channel"
+     UpdatedDate: 07-Mar-2022 09:28:39
+             Url: [1×1 matlab.net.URI]
+
+  Question with properties:
+
+     AnswerCount: 1
+    CommentCount: 0
+      IsAccepted: 0
+      IsAnswered: 1
+       ViewCount: 1
+       VoteCount: 0
+            Type: "question"
+          Author: [1×1 Author]
+     CreatedDate: 07-Mar-2022 09:55:51
+     Description: "Graphic color that changes according to data Hi all, I am working with data spreadsheets that allow me to plot strain versus stress. I would have liked to know if on the same graph, the color of the graph could change according to the percentage of the deformation. For example below 10% it is blue, between 10-20% it is green etc. Thanks for your help."
+              Id: 1665649
+           Scope: "matlab-answers"
+            Tags: "plot"
+           Title: "Graphic color that changes according to data"
+     UpdatedDate: 07-Mar-2022 09:55:51
+             Url: [1×1 matlab.net.URI]
+
+  Question with properties:
+
+     AnswerCount: 2
+    CommentCount: 0
+      IsAccepted: 1
+      IsAnswered: 0
+       ViewCount: 27
+       VoteCount: 0
+            Type: "question"
+          Author: [1×1 Author]
+     CreatedDate: 07-Mar-2022 10:11:55
+     Description: "why do i get this mesage array indices must be positive integers or logical values when trying to define the following function figure x=linspace(0,3*pi,1000); f(x)=exp(-x./2).*cos(2*x); plot(x,f(x),&amp;#39;--b&amp;#39;)"
+              Id: 1665654
+           Scope: "matlab-answers"
+            Tags: [2×1 string]
+           Title: "why do i get this mesage array indices must be positive integers or logical values when trying to define the following function "
+     UpdatedDate: 07-Mar-2022 10:11:55
+             Url: [1×1 matlab.net.URI]
+
+  Question with properties:
+
+     AnswerCount: 2
+    CommentCount: 0
+      IsAccepted: 1
+      IsAnswered: 0
+       ViewCount: 9
+       VoteCount: 0
+            Type: "question"
+          Author: [1×1 Author]
+     CreatedDate: 07-Mar-2022 10:25:55
+     Description: "How to flip a signal ? Hi all, I have an acceleration signal during human walking (walk forward, turn around, walk back). The attached is the 24x1 cell containing arrays of dimensions 100x 1 and each of these respresent acceleration signal between certain indices in the signal. Each array is plotted over the figure below. When the subjects turns around, it seems the signal is flipped around resulting in a half of the arrays being a negative mirror image of the remaining half of the arrays. This is more visible if a plot first 12 arrays and second 12 arrays on seperate figures: %Load data load(&amp;#39;P_acc_y_cycle&amp;#39;) %Plot each array figure hold on for i = 1:12 plot(P_acc_y_cycle{i},&amp;#39;r&amp;#39;); end figure hold on for i = 13:24 plot(P_acc_y_cycle{i},&amp;#39;r&amp;#39;) ; end How can I flip the first part (first 12 arrays) so it resembles the second part?"
+              Id: 1665664
+           Scope: "matlab-answers"
+            Tags: "signal processing"
+           Title: "How to flip a signal ?"
+     UpdatedDate: 07-Mar-2022 10:25:55
+             Url: [1×1 matlab.net.URI]
+
+  Question with properties:
+
+     AnswerCount: 1
+    CommentCount: 0
+      IsAccepted: 1
+      IsAnswered: 0
+       ViewCount: 0
+       VoteCount: 0
+            Type: "question"
+          Author: [1×1 Author]
+     CreatedDate: 07-Mar-2022 10:59:24
+     Description: "can you explain to me the error and fix it ? thanks Hello i have problem in my code at fplot i can&amp;#39;t plot my expression , can someone explain the error and fix it ? my code clear all clc f= inline(&amp;#39;1 + 5.25*x - sec(sqrt(0.68*x))&amp;#39;); fplot(@(x) f,[0 5]) dx=input(&amp;#39;Enter the value of dx: &amp;#39;); epsi=input(&amp;#39;Enter the value of epsilone: &amp;#39;); xi=input(&amp;#39;Enter the value of x initial: &amp;#39;); xm=input(&amp;#39;Enter the value of x max: &amp;#39;); N=input(&amp;#39;Enter the value of N: &amp;#39;); x= xi; xn= x+ dx; product= f(xi)*f(xn); while(abs(f(xn))&amp;gt;(1/epsi)) fprintf(&amp;#39;Function approaching infinity at %f&amp;#39;, xn); xn=x +dx; product= f(x)*f(xn); x= xn; end; if (abs(f(xn))&amp;lt;= 1/epsi) while (product &amp;gt; 0) if xn &amp;lt;= xm xn = x +dx; product= f(x)*f(xn); x= xn; else sprintf(&amp;#39;Stop! &amp;#39;); break; end end if(product==0) fprintf(&amp;#39;The exact root is %f&amp;#39;, xn); xn = x + epsi; product=f(x)*f(xn); x= xn; else while (dx &amp;gt; epsi) dx= dx / N; xn= x - dx; product=f(x)*f(xn); x= xn; end fprintf(&amp;#39;\nThe approximate root is %f.&amp;#39;, xn); end fprintf(&amp;#39;\nEnd\n&amp;#39;); end"
+              Id: 1665689
+           Scope: "matlab-answers"
+            Tags: "matlab"
+           Title: "can you explain to me the error and fix it ? thanks "
+     UpdatedDate: 07-Mar-2022 10:59:24
+             Url: [1×1 matlab.net.URI]</div></div></div></div></div>
+<br>
+<!-- 
+##### SOURCE BEGIN #####
+%% Getting Started with the MATLAB Central Interface for MATLAB
+%% Description
+% The Community API allows developers to programmatically retrieve data from 
+% <https://www.mathworks.com/matlabcentral MATLAB Central.> The API offers a single 
+% resource to search across different MATLAB Central areas including MATLAB Answers, 
+% File Exchange, Blogs, Cody, Highlights and Contests. Use this toolbox for easy 
+% integration with the Community API from your MATLAB scripts and apps.
+%% System Requirements
+% Requires MATLAB® release R2017b or newer
+%% Functions
+%% 
+% * |SearchApi.search| - Search MATLAB Central areas for content matching specified 
+% query. Areas you can search include MATLAB Answers, File Exchange, Blogs, Cody, 
+% Community Highlights, and Community Contests. The _scope_ parameter lets you 
+% restrict the request to specific MATLAB Central areas. The request accepts several 
+% other parameters to help narrow your search and create complex queries.
+%% Usage
+% Download matlabcentral-matlab.mltbx into your workspace.
+%% Examples
+% The following example demonstrates calling the Search API to retrieve MATLAB 
+% Answers for content matching the query term 'plotting' in the last one year. 
+% The example also demonstrates the use of all optional query parameters supported 
+% by the API.
+% 
+% Call the Search API using the _search_ method passing in values for all optional 
+% parameters
+
+query = "plotting";
+scope = "file-exchange,matlab-answers";
+created_before = datetime('12-Mar-2023 11:00:00');
+created_after = datetime('06-Mar-2022 11:00:00');
+sort_order = "created asc";
+page = 2;
+count = 15;
+
+[searchResults, statusCode, headers] = SearchApi.search(query=query,scope=scope,created_before=created_before,created_after=created_after,sort_order=sort_order,page=page,count=count);
+%% 
+% Extract the _items_ and _total_found_ objects from the response 
+
+totalFound = searchResults.total_found;
+items = searchResults.items
+%% 
+% Display the results as a table
+
+disp("Response Status: " + statusCode);
+disp("Found " + totalFound + " total results")
+if totalFound > 0
+    for item = 1:length(items)
+        disp(items(item))
+    end
+end
+##### SOURCE END #####
+-->
+</div></body></html>

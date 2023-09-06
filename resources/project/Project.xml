@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata MetadataType="monolithic">
+    <Info Location="ProjectData">
+        <Info Name="mathworks-community-matlab"/>
+    </Info>
+    <Files Location="Root">
+        <File Location=".gitattributes">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="other"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location=".gitignore">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="other"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="README.md">
+            <Info/>
+        </File>
+        <File Location="SECURITY.md">
+            <Info/>
+        </File>
+        <File Location="buildfile.m">
+            <Info>
+                <Category UUID="FileClassCategory">
+                    <Label UUID="design"/>
+                </Category>
+            </Info>
+        </File>
+        <File Location="images">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="toolboxPackaging.jpeg">
+                <Info/>
+            </File>
+        </File>
+        <File Location="license.txt">
+            <Info/>
+        </File>
+        <File Location="tests">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="searchApiTest.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="test"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="ConvertToISODateTimeTest.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="test"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="ConvertISOToLocalDateTimeTest.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="test"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+        <File Location="toolbox">
+            <Info/>
+            <DIR_SIGNIFIER Location="1">
+                <Info/>
+            </DIR_SIGNIFIER>
+            <File Location="demos.xml">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="derived"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="docs">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="html">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="errorHandling.html">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="helptoc.xml">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="wordcloudUsingSearch.html">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="gettingStarted.html">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="schemaDocs">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Author.md">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="Blog.md">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="CommunityContest.md">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="CommunityHighlight.md">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="File.md">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="Problem.md">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="Question.md">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="SearchResults.md">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="ApiError.md">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="ApiErrorDetail.md">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="Artifacts.md">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="derived"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="SearchApi.md">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="derived"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="examples">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="errorHandling.mlx">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="wordcloudUsingSearch.mlx">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="info.xml">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="internal">
+                <Info/>
+                <DIR_SIGNIFIER Location="1">
+                    <Info/>
+                </DIR_SIGNIFIER>
+                <File Location="apiSchema">
+                    <Info/>
+                    <DIR_SIGNIFIER Location="1">
+                        <Info/>
+                    </DIR_SIGNIFIER>
+                    <File Location="Author.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="Blog.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="CommunityContest.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="CommunityHighlight.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="Problem.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="Question.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="Artifact.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="File.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="UnknownArtifact.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="ApiError.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                    <File Location="ApiErrorDetail.m">
+                        <Info>
+                            <Category UUID="FileClassCategory">
+                                <Label UUID="design"/>
+                            </Category>
+                        </Info>
+                    </File>
+                </File>
+                <File Location="itemFactory.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="sendRequest.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="convertToISODateTime.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+                <File Location="convertISOToLocalDateTime.m">
+                    <Info>
+                        <Category UUID="FileClassCategory">
+                            <Label UUID="design"/>
+                        </Category>
+                    </Info>
+                </File>
+            </File>
+            <File Location="SearchApi.m">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+            <File Location="gettingStarted.mlx">
+                <Info>
+                    <Category UUID="FileClassCategory">
+                        <Label UUID="design"/>
+                    </Category>
+                </Info>
+            </File>
+        </File>
+        <File Location="toolboxPackaging.prj">
+            <Info/>
+        </File>
+    </Files>
+    <Categories Location="Root">
+        <Category Location="FileClassCategory">
+            <Info DataType="None" Name="Classification" ReadOnly="1" SingleValued="1"/>
+            <Label Location="design">
+                <Info Name="Design" ReadOnly="INHERITED"/>
+            </Label>
+            <Label Location="derived">
+                <Info Name="Derived" ReadOnly="INHERITED"/>
+            </Label>
+            <Label Location="artifact">
+                <Info Name="Artifact" ReadOnly="INHERITED"/>
+            </Label>
+            <Label Location="convenience">
+                <Info Name="Convenience" ReadOnly="INHERITED"/>
+            </Label>
+            <Label Location="other">
+                <Info Name="Other" ReadOnly="INHERITED"/>
+            </Label>
+            <Label Location="test">
+                <Info Name="Test" ReadOnly="INHERITED"/>
+            </Label>
+            <Label Location="none">
+                <Info Name="None" ReadOnly="INHERITED"/>
+            </Label>
+        </Category>
+    </Categories>
+    <ProjectPath Location="Root">
+        <Reference Location="056a3cf4-0042-4754-bf46-00ae22af0f4f">
+            <Info Ref="toolbox" Type="Relative"/>
+        </Reference>
+        <Reference Location="0cd17b14-28d9-40ba-a7d3-28777037787f">
+            <Info Ref="" Type="Relative"/>
+        </Reference>
+        <Reference Location="5442cd21-3d34-4fd5-8f29-ffb59f59bfd8">
+            <Info Ref="toolbox/examples" Type="Relative"/>
+        </Reference>
+        <Reference Location="5f611aba-2c75-4131-b91a-eac88c155565">
+            <Info Ref="toolbox/internal" Type="Relative"/>
+        </Reference>
+        <Reference Location="822569e8-b0a0-4065-9871-039a24fb1556">
+            <Info Ref="tests" Type="Relative"/>
+        </Reference>
+        <Reference Location="f47754b4-33c3-441f-87a5-fb9ccebcf196">
+            <Info Ref="toolbox/internal/apiSchema" Type="Relative"/>
+        </Reference>
+    </ProjectPath>
+</metadata>

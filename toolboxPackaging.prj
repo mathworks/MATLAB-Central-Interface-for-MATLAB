@@ -1,0 +1,194 @@
+<deployment-project plugin="plugin.toolbox" plugin-version="1.0">
+  <configuration build-checksum="2025759537" file="/System/Volumes/Data/mathworks/devel/sandbox/asridhar/workspaces/Ccommunity/scm/mathworks-community-matlab/toolboxPackaging.prj" location="/System/Volumes/Data/mathworks/devel/sandbox/asridhar/workspaces/Ccommunity/scm/mathworks-community-matlab" name="toolboxPackaging" target="target.toolbox" target-name="Package Toolbox">
+    <param.appname>MATLAB Central Interface For MATLAB</param.appname>
+    <param.authnamewatermark>MathWorks</param.authnamewatermark>
+    <param.email />
+    <param.company>MathWorks</param.company>
+    <param.summary>Toolbox to access MATLAB Central APIs from MATLAB</param.summary>
+    <param.description>The toolbox offers simple methods to access MATLAB Central data programmatically  from MATLAB apps, scripts and functions.</param.description>
+    <param.screenshot>${PROJECT_ROOT}/images/toolboxPackaging.jpeg</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.output>${PROJECT_ROOT}/MATLAB Central Interface For MATLAB.mltbx</param.output>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.guid>0f5ca13a-dcca-4e24-a20e-3174399a9e02</param.guid>
+    <param.exclude.filters />
+    <param.exclude.pcodedmfiles>true</param.exclude.pcodedmfiles>
+    <param.examples>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;examples&gt;
+   &lt;exampleCategory name="examples"&gt;
+      &lt;example name="errorHandling" type="html"&gt;
+         &lt;file type="source"&gt;/toolbox/examples/html/errorHandling.html&lt;/file&gt;
+         &lt;file type="main"&gt;/toolbox/examples/errorHandling.mlx&lt;/file&gt;
+         &lt;file type="thumbnail"/&gt;
+      &lt;/example&gt;
+      &lt;example name="wordcloudUsingSearch" type="html"&gt;
+         &lt;file type="source"&gt;/toolbox/examples/html/wordcloudUsingSearch.html&lt;/file&gt;
+         &lt;file type="main"&gt;/toolbox/examples/wordcloudUsingSearch.mlx&lt;/file&gt;
+         &lt;file type="thumbnail"/&gt;
+      &lt;/example&gt;
+   &lt;/exampleCategory&gt;
+   &lt;exampleCategory name="toolbox"&gt;
+      &lt;example name="gettingStarted" type="html"&gt;
+         &lt;file type="source"&gt;/toolbox/html/gettingStarted.html&lt;/file&gt;
+         &lt;file type="main"&gt;/toolbox/gettingStarted.mlx&lt;/file&gt;
+         &lt;file type="thumbnail"/&gt;
+      &lt;/example&gt;
+   &lt;/exampleCategory&gt;
+&lt;/examples&gt;</param.examples>
+    <param.demosxml />
+    <param.apps />
+    <param.registered.apps />
+    <param.docs>${PROJECT_ROOT}/toolbox/info.xml</param.docs>
+    <param.getting.started.guide>${PROJECT_ROOT}/toolbox/gettingStarted.mlx</param.getting.started.guide>
+    <param.matlabpath.excludes>
+      <item>/toolbox/api</item>
+      <item>/toolbox/docs/apiDocs</item>
+    </param.matlabpath.excludes>
+    <param.javaclasspath.excludes />
+    <param.exported.on.package>true</param.exported.on.package>
+    <param.required.addons />
+    <param.matlab.project.id />
+    <param.matlab.project.name />
+    <param.release.start />
+    <param.release.end />
+    <param.release.current.only>false</param.release.current.only>
+    <param.compatiblity.windows>true</param.compatiblity.windows>
+    <param.compatiblity.macos>true</param.compatiblity.macos>
+    <param.compatiblity.linux>true</param.compatiblity.linux>
+    <param.compatiblity.matlabonline>true</param.compatiblity.matlabonline>
+    <param.installation.map />
+    <param.additional.sw.names />
+    <param.additional.sw.licenses />
+    <param.additional.sw.win.url />
+    <param.additional.sw.mac.url />
+    <param.additional.sw.linux.url />
+    <unset>
+      <param.email />
+      <param.version />
+      <param.output />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.exclude.filters />
+      <param.exclude.pcodedmfiles />
+      <param.demosxml />
+      <param.apps />
+      <param.registered.apps />
+      <param.javaclasspath.excludes />
+      <param.required.addons />
+      <param.matlab.project.id />
+      <param.matlab.project.name />
+      <param.release.start />
+      <param.release.end />
+      <param.release.current.only />
+      <param.compatiblity.windows />
+      <param.compatiblity.macos />
+      <param.compatiblity.linux />
+      <param.compatiblity.matlabonline />
+      <param.installation.map />
+      <param.additional.sw.names />
+      <param.additional.sw.licenses />
+      <param.additional.sw.win.url />
+      <param.additional.sw.mac.url />
+      <param.additional.sw.linux.url />
+    </unset>
+    <fileset.rootdir>
+      <file>${PROJECT_ROOT}</file>
+    </fileset.rootdir>
+    <fileset.rootfiles>
+      <file>${PROJECT_ROOT}/.DS_Store</file>
+      <file>${PROJECT_ROOT}/._.DS_Store</file>
+      <file>${PROJECT_ROOT}/._buildfile.m</file>
+      <file>${PROJECT_ROOT}/._images</file>
+      <file>${PROJECT_ROOT}/._tests</file>
+      <file>${PROJECT_ROOT}/._toolbox</file>
+      <file>${PROJECT_ROOT}/.buildtool</file>
+      <file>${PROJECT_ROOT}/.git</file>
+      <file>${PROJECT_ROOT}/.gitattributes</file>
+      <file>${PROJECT_ROOT}/.gitignore</file>
+      <file>${PROJECT_ROOT}/.history</file>
+      <file>${PROJECT_ROOT}/README.md</file>
+      <file>${PROJECT_ROOT}/SECURITY.md</file>
+      <file>${PROJECT_ROOT}/buildfile.m</file>
+      <file>${PROJECT_ROOT}/demos.xml</file>
+      <file>${PROJECT_ROOT}/images</file>
+      <file>${PROJECT_ROOT}/license.txt</file>
+      <file>${PROJECT_ROOT}/resources</file>
+      <file>${PROJECT_ROOT}/tests</file>
+      <file>${PROJECT_ROOT}/toolbox</file>
+    </fileset.rootfiles>
+    <fileset.depfun.included />
+    <fileset.depfun.excluded />
+    <fileset.package />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}" name="MATLAB Central Interface For MATLAB.mltbx" optional="false">/System/Volumes/Data/mathworks/devel/sandbox/asridhar/workspaces/Ccommunity/scm/mathworks-community-matlab/MATLAB Central Interface For MATLAB.mltbx</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>/System/Volumes/Data/mathworks/devel/bat/archive/R2023a/perfect/matlab</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+        <toolbox name="embeddedcoder" />
+        <toolbox name="gpucoder" />
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="neuralnetwork" />
+        <toolbox name="polyspacebugfinder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+      <toolbox>
+        <gpucoder>
+          <enabled>true</enabled>
+        </gpucoder>
+      </toolbox>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+      <toolbox>
+        <polyspacebugfinder>
+          <enabled>true</enabled>
+        </polyspacebugfinder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>true</unix>
+      <mac>true</mac>
+      <windows>false</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>12.1</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>maci64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
