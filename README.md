@@ -2,7 +2,7 @@
 [![View MATLAB Central Interface for MATLAB on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/) [![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo)
 
 # MATLAB Central Interface for MATLAB
-The toolbox provides easy to use MATLAB&reg; functions that simplify the process of making requests to the MathWorks&reg; Community APIs. Whether you are using the APIs for data-analysis/reporting or for building custom MATLAB apps, the toolbox provides for a smooth integration.
+The toolbox provides easy to use MATLAB&reg; functions that simplify the process of making requests to the [MATLAB Central (MathWorks&reg; Community) APIs](https://api.mathworks.com/community/docs). Whether you are using the APIs for data-analysis/reporting or for building custom MATLAB apps, the toolbox provides for a smooth integration.
 
 - MATLAB Central Interface for MATLAB
   - [Requirements](#requirements)
