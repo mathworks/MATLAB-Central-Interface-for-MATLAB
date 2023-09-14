@@ -5,8 +5,8 @@ function [Body, StatusCode, Headers]  = sendRequest(httpMethod, relativePath, op
   % Construct the HTTP request object
   requestObj = matlab.net.http.RequestMessage; 
   requestObj.Method = httpMethod;  
-  requestObj.Header = [requestObj.Header, matlab.net.http.HeaderField("Content-Type","application/json"), matlab.net.http.HeaderField("Accept","application/json")];
-  
+  requestObj.Header = [requestObj.Header, matlab.net.http.HeaderField("Content-Type","application/json"), matlab.net.http.HeaderField("Accept","application/json"), matlab.net.http.HeaderField("s_tid","ml_sdk")];
+
   % If created_before is present, convert to ISO 8601 format
   if isfield(optionalArgs, 'created_before')
      optionalArgs.created_before = convertToISODateTime(optionalArgs.created_before);

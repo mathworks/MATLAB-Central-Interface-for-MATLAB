@@ -55,8 +55,12 @@ end
         % By default, the packaging GUI restricts the name of the getting started guide, so we fix that here.
         opts.ToolboxGettingStartedGuide = fullfile("toolbox", "gettingStarted.mlx");
         
+        % Replace spaces with underscores to be GitHub friendly and move to releases directory
+        newMltbxFilename = strrep(opts.ToolboxName," ","_");
+
         % Put the MLTBX in the release directory.
-        opts.OutputFile = fullfile("release",opts.ToolboxName + ".mltbx");
+        opts.OutputFile = fullfile("release",newMltbxFilename + ".mltbx");
+        
         matlab.addons.toolbox.packageToolbox(opts);
     end
     
