@@ -14,7 +14,7 @@ Search MATLAB Central artifacts that match a specified query. Areas you can sear
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **query** | **String**| Enter keywords to search. Separate multiple keywords with space or comma. | [optional] 
- **scope** | **String**| A comma-separated list of MATLAB Central areas to search within. | [optional] [default to all]
+ **scope** | **String**| A comma-separated list of MATLAB Central areas to search within. All values must be a member of this set: matlab-answers, file-exchange, cody, blogs,  community-contests, community-highlights. | [optional] [default is all values in the set]
  **tags** | **String**| A comma-separated list of tags. MATLAB Central areas that do not support tags are excluded from the result set. | [optional] 
  **created_before** | **String**| Content that was created before this date and time, specified in ISO 8601 format. | [optional] 
  **created_after** | **String**| Content that was created after this date and time, specified in ISO 8601 format. | [optional] 

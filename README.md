@@ -13,7 +13,7 @@ The toolbox provides easy to use MATLAB&reg; functions that simplify the process
 
 ## Installation
 
-1. Install the toolbox by using the Add-on explorer in MATLAB or by downloading the  **matlabcentral-matlab.mltbx** file attached to the latest release on GitHub, then doubleclicking on it.
+1. Install the toolbox by using the Add-on explorer in MATLAB or by downloading the  **MATLAB_Central_Interface_For_MATLAB.mltbx** file attached to the latest release on GitHub, then doubleclicking on it.
 
 ## Quick Usage
 
