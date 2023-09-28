@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.toolbox" plugin-version="1.0">
-  <configuration build-checksum="2025759537" file="/System/Volumes/Data/mathworks/devel/sandbox/asridhar/workspaces/Ccommunity/scm/mathworks-community-matlab/toolboxPackaging.prj" location="/System/Volumes/Data/mathworks/devel/sandbox/asridhar/workspaces/Ccommunity/scm/mathworks-community-matlab" name="toolboxPackaging" target="target.toolbox" target-name="Package Toolbox">
+  <configuration build-checksum="3332636374" file="/System/Volumes/Data/mathworks/devel/sandbox/asridhar/workspaces/Ccommunity/scm/MATLAB-Central-Interface-for-MATLAB/toolboxPackaging.prj" location="/System/Volumes/Data/mathworks/devel/sandbox/asridhar/workspaces/Ccommunity/scm/MATLAB-Central-Interface-for-MATLAB" name="toolboxPackaging" target="target.toolbox" target-name="Package Toolbox">
     <param.appname>MATLAB Central Interface For MATLAB</param.appname>
     <param.authnamewatermark>MathWorks</param.authnamewatermark>
     <param.email />
@@ -102,13 +102,11 @@
     <fileset.rootfiles>
       <file>${PROJECT_ROOT}/.DS_Store</file>
       <file>${PROJECT_ROOT}/._.DS_Store</file>
-      <file>${PROJECT_ROOT}/._buildfile.m</file>
-      <file>${PROJECT_ROOT}/._images</file>
+      <file>${PROJECT_ROOT}/._resources</file>
       <file>${PROJECT_ROOT}/._tests</file>
       <file>${PROJECT_ROOT}/._toolbox</file>
       <file>${PROJECT_ROOT}/.buildtool</file>
       <file>${PROJECT_ROOT}/.git</file>
-      <file>${PROJECT_ROOT}/.gitattributes</file>
       <file>${PROJECT_ROOT}/.gitignore</file>
       <file>${PROJECT_ROOT}/.history</file>
       <file>${PROJECT_ROOT}/README.md</file>
@@ -117,6 +115,7 @@
       <file>${PROJECT_ROOT}/demos.xml</file>
       <file>${PROJECT_ROOT}/images</file>
       <file>${PROJECT_ROOT}/license.txt</file>
+      <file>${PROJECT_ROOT}/release</file>
       <file>${PROJECT_ROOT}/resources</file>
       <file>${PROJECT_ROOT}/tests</file>
       <file>${PROJECT_ROOT}/toolbox</file>
@@ -125,7 +124,7 @@
     <fileset.depfun.excluded />
     <fileset.package />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}" name="MATLAB Central Interface For MATLAB.mltbx" optional="false">/System/Volumes/Data/mathworks/devel/sandbox/asridhar/workspaces/Ccommunity/scm/mathworks-community-matlab/MATLAB Central Interface For MATLAB.mltbx</file>
+      <file location="${PROJECT_ROOT}" name="MATLAB Central Interface For MATLAB.mltbx" optional="false">/System/Volumes/Data/mathworks/devel/sandbox/asridhar/workspaces/Ccommunity/scm/MATLAB-Central-Interface-for-MATLAB/MATLAB Central Interface For MATLAB.mltbx</file>
     </build-deliverables>
     <workflow />
     <matlab>
