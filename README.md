@@ -1,4 +1,4 @@
-[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=mathworks/MATLAB-Central-Interface-for-MATLAB&file=https://github.com/mathworks/MATLAB-Central-Interface-for-MATLAB/blob/main/toolbox/gettingStarted.mlx)
+[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=mathworks/MATLAB-Central-Interface-for-MATLAB&file=toolbox/gettingStarted.mlx)
 
 [![View MATLAB-Central-Interface-for-MATLAB on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/135567-matlab-central-interface-for-matlab)
 
